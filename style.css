@@ -1,12 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-h1 {
-    color: #333;
-}
-/* Reset default styles */
+/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,79 +6,104 @@ h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Body Styling */
+/* Background with gradient */
 body {
-    background: linear-gradient(120deg, #f0f0f0, #dfe9f3);
-    color: #333;
+    background: linear-gradient(to right, #e3fdfd, #ffe6fa);
     text-align: center;
-    padding: 20px;
-}
-
-/* Header Styling */
-h1 {
-    font-size: 2.8em;
-    color: #1a1a2e;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-/* Subtitle */
-p {
-    font-size: 1.3em;
-    color: #333;
-    margin-bottom: 30px;
 }
 
 /* Navigation Bar */
-nav {
-    background: #1a1a2e;
+header {
+    background: rgba(255, 255, 255, 0.9);
     padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
 }
 
 nav ul {
     list-style: none;
-    text-align: center;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
-    transition: 0.3s;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff4c29;
+    color: #ff4081;
 }
 
-/* Button Styling */
-.button {
+/* Hero Section */
+.hero {
+    margin-top: 100px;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #222;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Button */
+.btn {
     display: inline-block;
+    margin-top: 15px;
     padding: 12px 25px;
-    background: #ff4c29;
+    background: #ff4081;
     color: white;
-    font-size: 1.2em;
-    border-radius: 5px;
     text-decoration: none;
-    transition: 0.3s;
+    border-radius: 30px;
+    transition: background 0.3s ease;
 }
 
-.button:hover {
-    background: #d14321;
-    transform: scale(1.05);
+.btn:hover {
+    background: #e6006b;
 }
 
-/* Footer */
-footer {
-    margin-top: 40px;
-    background: #1a1a2e;
-    color: white;
-    padding: 15px 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 8px 0;
+    }
 }
