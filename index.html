@@ -1,72 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MarketPlaza</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
     <header>
-        <h1>MarketPlaza</h1>
         <nav>
-            <ul>
+            <div class="logo">MarketPlaza</div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger">☰</button>
         </nav>
-    </header>
+    </header><section class="hero">
+    <h1>Welcome to MarketPlaza</h1>
+    <p>Your best dropshipping store.</p>
+    <button class="shop-btn">Shop Now</button>
+</section>
 
-    <section class="hero">
-        <h2>Welcome to MarketPlaza</h2>
-        <p>Your best dropshipping store.</p>
-        <a href="#" class="btn">Shop Now</a>
-    </section>
-
-    <section class="products">
-        <h2>Featured Products</h2>
-        <div class="product-container">
-            <div class="product-card">
-                <img src="product1.jpg" alt="Product 1">
-                <h3>Product Name</h3>
-                <p>$29.99</p>
-                <button class="btn">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="product2.jpg" alt="Product 2">
-                <h3>Product Name</h3>
-                <p>$39.99</p>
-                <button class="btn">Add to Cart</button>
-            </div>
+<section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-list">
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product Name</h3>
+            <p>$29.99</p>
+            <button class="add-to-cart">Add to Cart</button>
         </div>
-    </section>
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product Name</h3>
+            <p>$39.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</section>
 
-    <section class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <p>"Great quality products and fast shipping!" - Happy Customer</p>
-        <p>"Amazing customer service, will buy again!" - Satisfied Shopper</p>
-    </section>
+<section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <p>"Great quality products and fast shipping!" - Happy Customer</p>
+    <p>"Amazing customer service, will buy again!" - Satisfied Shopper</p>
+</section>
 
-    <section class="newsletter">
-        <h2>Subscribe to Our Newsletter</h2>
-        <input type="email" placeholder="Enter your email">
-        <button class="btn">Subscribe</button>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button class="btn">Send</button>
-    </section>
-
-    <footer>
-        <p>© 2024 MarketPlaza | All Rights Reserved</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 MarketPlaza | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
