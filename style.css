@@ -1,128 +1,68 @@
-/* Reset Styles */
+/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Background with gradient */
+/* Body styling */
 body {
-    background: linear-gradient(to right, #E3FDFD, #FFE6FA);
-}
-    
-
-
-/* Navigation Bar */
-header {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: 600;
+    background: linear-gradient(to right, #d9f4ff, #ffe4fa);
     color: #333;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
+    padding: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: black;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #ff4081;
+/* Hero section */
+.hero {
+    margin-top: 100px;
+    padding: 50px;
 }
-
-/* Hero Section */
-
-    .hero {
-    padding-top: 100px; /* Moves content down */
-    };
-
 
 .hero h1 {
     font-size: 36px;
-    font-weight: 600;
-    color: #222;
+    font-weight: bold;
 }
 
 .hero p {
     font-size: 18px;
-    color: #555;
-    margin: 10px 0;
+    margin-top: 10px;
 }
 
-/* Button */
-.body {
-    background: linear-gradient(to right, #E3FDFD, #FFE6FA);
-}
-
-
-.btn:hover {
-    background: #e6006b;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;/* Fix hero section position */
-.hero {
-    margin-top: 100px; /* Adjust this value if needed */
-}
-
-/* Fix navigation to prevent overlap */
-nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: white;
-    z-index: 1000;
-}
-
-/* Ensure text and button are fully visible */
-.hero h1, .hero p {
-    color: black; /* Change text color */
-    opacity: 1;
-}
-
-.btn {
-    opacity: 1; /* Make sure button is fully visible */
-}
-        text-align: center;
-    }
-    
-    nav ul {
-        margin-top: 10px;
-        flex-direction: column;
-    }
-    
-    nav ul li {
-        margin: 8px 0;
-    }
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff3e6c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
