@@ -90,7 +90,30 @@ nav ul li a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: column;/* Fix hero section position */
+.hero {
+    margin-top: 100px; /* Adjust this value if needed */
+}
+
+/* Fix navigation to prevent overlap */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1000;
+}
+
+/* Ensure text and button are fully visible */
+.hero h1, .hero p {
+    color: black; /* Change text color */
+    opacity: 1;
+}
+
+.btn {
+    opacity: 1; /* Make sure button is fully visible */
+}
         text-align: center;
     }
     
