@@ -1,79 +1,72 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MarketPlaza</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
+        <h1>MarketPlaza</h1>
         <nav>
-            <h1>MarketPlaza</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><input type="text" id="search" placeholder="Search products..."></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </header><section id="home">
-    <h2>Welcome to <span>MarketPlaza</span></h2>
-    <p>Your best dropshipping store.</p>
-    <button class="shop-now">Shop Now</button>
-</section>
+    </header>
 
-<section id="featured-products">
-    <h2>Featured Products</h2>
-    <div class="products">
-        <div class="product-card">
-            <img src="images/product1.jpg" alt="Product 1">
-            <h3>Product Name</h3>
-            <p>$29.99</p>
-            <button>Add to Cart</button>
+    <section class="hero">
+        <h2>Welcome to MarketPlaza</h2>
+        <p>Your best dropshipping store.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </section>
+
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product Name</h3>
+                <p>$29.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product Name</h3>
+                <p>$39.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
         </div>
-        <div class="product-card">
-            <img src="images/product2.jpg" alt="Product 2">
-            <h3>Product Name</h3>
-            <p>$39.99</p>
-            <button>Add to Cart</button>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="testimonial">
-        <p>"Great quality products and fast shipping!"</p>
-        <span>- Happy Customer</span>
-    </div>
-    <div class="testimonial">
-        <p>"Amazing customer service, will buy again!"</p>
-        <span>- Satisfied Shopper</span>
-    </div>
-</section>
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p>"Great quality products and fast shipping!" - Happy Customer</p>
+        <p>"Amazing customer service, will buy again!" - Satisfied Shopper</p>
+    </section>
 
-<section id="newsletter">
-    <h2>Subscribe to Our Newsletter</h2>
-    <input type="email" placeholder="Enter your email">
-    <button>Subscribe</button>
-</section>
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email">
+        <button class="btn">Subscribe</button>
+    </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <form>
+    <section class="contact">
+        <h2>Contact Us</h2>
         <input type="text" placeholder="Your Name">
         <input type="email" placeholder="Your Email">
         <textarea placeholder="Your Message"></textarea>
-        <button>Send</button>
-    </form>
-</section>
+        <button class="btn">Send</button>
+    </section>
 
-<footer>
-    <p>&copy; 2024 MarketPlaza | All Rights Reserved</p>
-</footer>
-
-<script src="script.js"></script>
+    <footer>
+        <p>© 2024 MarketPlaza | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
