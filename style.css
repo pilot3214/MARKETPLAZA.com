@@ -1,165 +1,127 @@
 /* General Styles */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body {
-    background: linear-gradient(to right, #e0f7fa, #f8bbd0);
-    text-align: center;
+    background: linear-gradient(to right, #d4fc79, #96e6a1);
 }
 
-/* Navigation Bar */
-nav {
+/* Header */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
     background: white;
-    padding: 15px 50px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 }
+
 .logo {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: bold;
 }
-.nav-links {
+
+nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
 }
-.nav-links li a {
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    font-weight: bold;
     color: black;
-    font-weight: 500;
-    transition: 0.3s;
-}
-.nav-links li a:hover {
-    color: #ff4081;
 }
 
 /* Hero Section */
-.hero-section {
-    padding: 80px 20px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-.hero-section h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-.hero-section span {
-    color: #ff4081;
-}
-.hero-section p {
-    font-size: 18px;
-    margin: 10px 0 20px;
-}
-.shop-now {
-    display: inline-block;
-    background: #ff4081;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
-}
-.shop-now:hover {
-    background: #ff2e63;
-    transform: scale(1.05);
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #f8cfd9, #fad0c4);
 }
 
-/* Featured Products */
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero span {
+    color: #ff4081;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #ff4081;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Product Section */
 .products {
-    padding: 50px 20px;
+    text-align: center;
+    padding: 40px;
 }
-.products h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+.product-list {
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
-.product-card {
+
+.product {
     background: white;
     padding: 15px;
     border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-.product-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-.product-card h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-.product-card p {
-    font-size: 16px;
-    color: #ff4081;
-}
-.product-card button {
-    background: #ff4081;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.product-card button:hover {
-    background: #ff2e63;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Contact Form */
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+/* Contact Section */
 .contact {
-    padding: 50px 20px;
+    text-align: center;
+    padding: 40px;
     background: white;
 }
-.contact h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
-}
+
 .contact input, .contact textarea {
+    width: 80%;
     padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .contact button {
     background: #ff4081;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.contact button:hover {
-    background: #ff2e63;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    padding: 20px;
+    background: black;
+    color: white;
 }
