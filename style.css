@@ -8,9 +8,10 @@
 
 /* Background with gradient */
 body {
-    background: linear-gradient(to right, #e3fdfd, #ffe6fa);
-    text-align: center;
+    background: linear-gradient(to right, #E3FDFD, #FFE6FA);
 }
+    
+
 
 /* Navigation Bar */
 header {
@@ -58,10 +59,11 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero {
-    margin-top: 100px;
-    padding: 100px 20px;
-}
+
+    .hero {
+    padding-top: 100px; /* Moves content down */
+    };
+
 
 .hero h1 {
     font-size: 36px;
@@ -76,16 +78,10 @@ nav ul li a:hover {
 }
 
 /* Button */
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: #ff4081;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background 0.3s ease;
+.body {
+    background: linear-gradient(to right, #E3FDFD, #FFE6FA);
 }
+
 
 .btn:hover {
     background: #e6006b;
