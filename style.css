@@ -1,26 +1,32 @@
-body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
+body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
 
-header { background: #1E1E1E; color: white; display: flex; justify-content: space-between; align-items: center; padding: 15px 10%; }
+.container { width: 90%; max-width: 1200px; margin: auto; }
+
+header { background: #222; color: white; padding: 20px 0; }
+
+header .container { display: flex; justify-content: space-between; align-items: center; }
 
 nav ul { list-style: none; display: flex; gap: 20px; }
 
-nav a { color: white; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+nav a { color: white; text-decoration: none; font-weight: 600; transition: 0.3s; }
 
-nav a:hover { color: #ff9800; }
+nav a:hover { color: #f4a261; }
 
-.hero { text-align: center; padding: 50px; background: linear-gradient(to right, #ff7e5f, #feb47b); color: white; }
+.hero { text-align: center; padding: 50px 20px; background: linear-gradient(to right, #f4a261, #e76f51); color: white; }
 
-.btn { background: #ff9800; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px; margin-top: 15px; display: inline-block; text-decoration: none; transition: background 0.3s; }
+.btn { display: inline-block; background: #222; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; transition: 0.3s; }
 
-.btn:hover { background: #e68900; }
+.btn:hover { background: #f4a261; }
 
-.products { display: flex; justify-content: center; gap: 20px; padding: 40px; }
+.products { display: flex; gap: 20px; justify-content: center; padding: 50px 20px; }
 
-.product-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; width: 250px; }
+.product { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; }
 
-.product-card img { width: 100%; border-radius: 10px; }
+.product img { width: 100%; max-height: 200px; object-fit: cover; border-radius: 10px; }
 
-footer { background: #1E1E1E; color: white; text-align: center; padding: 20px; margin-top: 30px; }
+footer { text-align: center; padding: 20px; background: #222; color: white; }
 
-.socials a { color: #ff9800; margin: 0 10px; text-decoration: none; }
+.social-links a { color: white; text-decoration: none; margin: 0 10px; transition: 0.3s; }
+
+.social-links a:hover { color: #f4a261; }
 
