@@ -1,44 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to Our Modern Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="hero">
-        <h2>Experience Innovation</h2>
-        <p>Discover the best solutions for your business.</p>
-        <button class="cta">Get Started</button>
-    </section>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We provide top-notch services to help you succeed.</p>
-    </section>
+header { background: #007bff; color: white; padding: 1rem; text-align: center; }
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-card">Web Development</div>
-        <div class="service-card">SEO Optimization</div>
-        <div class="service-card">Marketing Strategies</div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Modern Website. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+nav ul { list-style: none; padding: 0; }
+
+nav ul li { display: inline; margin: 0 15px; }
+
+nav ul li a { color: white; text-decoration: none; }
+
+section { padding: 20px; text-align: center; }
+
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+
+.product img { width: 100%; height: auto; }
+
+footer { background: #333; color: white; text-align: center; padding: 10px; position: relative; }
+
