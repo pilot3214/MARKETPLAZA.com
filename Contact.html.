@@ -10,15 +10,14 @@
     <header>
         <h1>Contact Us</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <section class="contact">
         <h2>Get in Touch</h2>
-        <p>Email: <a href="mailto:abdipilot7@gmail.com">abdipilot7@gmail.com</a></p>
+        <p>Email us at: <strong>abdipilot7@gmail.com</strong></p>
     </section>
 
     <footer>
