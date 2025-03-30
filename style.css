@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
-    text-align: center;
 }
 
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background: #000;
     padding: 20px;
 }
 
@@ -22,25 +22,29 @@ nav ul li {
     margin: 0 15px;
 }
 
-a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
 .hero {
-    padding: 50px;
+    padding: 50px 20px;
 }
 
 .products {
+    padding: 20px;
+}
+
+.product-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
 }
 
 .product {
     background: white;
     color: black;
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
